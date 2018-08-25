@@ -1,0 +1,54 @@
+<!DocType html>
+<html lang = "en us">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Word Guess Game</title>
+        <link rel="reset" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <div class= "wrapper">
+            <div class="container" id="Main">
+                <div class="row justify-content-center">
+                        <h1>Sweet Treats</h1>
+                    </div>
+                <div class="row justify-content-center">
+                    <h1>Hangman</h1>
+                </div>
+                <div class="row justify-content-center p-3">
+                    <h2 id="Start">Press any key to get started!</h2>
+                </div>
+                <div class="row text-center" id="main-top">
+                    <div class="col-6">
+                        <img id="hangmanImage" src="assets/images/kisspng-hanging-capital-punishment-gallows-rope-rope-5aca03766f1647.642031141523188598455.png" height="300px" alt="Hangman Platform">
+                    </div>     
+                    <div class="col-6 pt-4">
+                        <h3 id="word">Current Word</h3>
+                        <h3 id="current-word">_____</h3>
+                    </div>
+                </div>
+                <div class="row text-center" id="main-middle">
+                    <div class="col-6 pt-4 pb-4">
+                        <h3 id="wins-text">Wins: 0</h3>
+                    </div>
+                    <div class="col-6 pt-1">
+                        <h3>Number of Guesses Remaining</h3>
+                        <h3 id="remaining-guesses">8</h3>
+                    </div>
+                </div>
+                <div class="row text-center" id="main-bottom">
+                    <div class="col-6 pt-4 pb-4">
+                        <h3 id="losses-text">Losses: 0</h3>
+                    </div>
+                    <div class="col-6">
+                        <h3>Letters Already Guessed</h3>
+                        <h3 id="guessed-letters"></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    </body>
+</html>
